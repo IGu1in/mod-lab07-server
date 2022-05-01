@@ -18,7 +18,7 @@ namespace Lab7
     {
         static void Main(string[] args)
         {
-            int requestsIntensity = 200;
+            int requestsIntensity = 10;
             int serviceIntensity = 10;
             int numberThread = 5;
             Server server = new Server(numberThread, requestsIntensity);
@@ -32,7 +32,7 @@ namespace Lab7
 
             Console.WriteLine("Всего заявок: {0}", server.requestCount);
             Console.WriteLine("Обработано заявок: {0}", server.servicedCount);
-            Console.WriteLine("Откланено заявок: {0}", server.rejectedCount);
+            Console.WriteLine("Отклонено заявок: {0}", server.rejectedCount);
         }
     }
 }
